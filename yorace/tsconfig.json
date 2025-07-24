@@ -5,12 +5,22 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "baseUrl": "src",
+    "target": "esnext",
+    "jsx": "react-jsx",
+    "baseUrl": ".",
     "paths": {
-      "components": ["components/*"],
-      "config": ["config/*"],
-      "styles": ["styles/*"],
-      "utils": ["utils/*"]
+      "@/*": ["./src/*", "./dist/*", ""],
+      "public": ["src/public/*"],
+      "pages": ["src/pages/*"],
+      "types": ["src/types/*"],
+      "configs": ["src/configs/*"],
+      "data": ["src/data/*"],
+      "hooks": ["src/hooks/*"],
+      "providers": ["src/providers/*"],
+      "services": ["src/services/*"],
+      "shared": ["src/shared/*"],
+      "utils": ["src/utils/*"],
+      "components": ["src/components/*"],
     }
-  }
+  },
 }
