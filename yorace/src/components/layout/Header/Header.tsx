@@ -1,10 +1,13 @@
 import "./Header.scss"
 
-function Header() {
+const Header = () => {
   return (
-    <header>headers</header>
+    <header>
+       <a className="logo">
+
+       </a>
+    </header>
   )
 }
 
 export default Header
-
